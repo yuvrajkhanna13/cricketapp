@@ -1,5 +1,7 @@
 # Cricket Prediction Model
 
+import pandas as pd
+
 # Load player info
 players_df = pd.read_csv('players_info.csv')  # Should contain: player_id, player_name
 
