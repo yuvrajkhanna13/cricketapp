@@ -162,46 +162,6 @@ import random
 
 df = pd.read_csv("t20_batting_cleaned.csv")
 
-df['runs_scored'] = df['team1_runs_scored'].astype(str).str.strip() + " & " + df['team2_runs_scored'].astype(str).str.strip()
-
-df = df[df['runs_scored'].notnull() & df['batsman'].notnull()]
-
-num_simulations = 1000
-overs = 20
-balls_per_over = 6
-max_balls = overs * balls_per_over
-
-ball_outcomes = df['runs_scored'].values
-
-
-def simulate_innings():
-    total_runs = 0
-    wickets = 0
-    for ball in range(max_balls):
-        run = np.random.choice(ball_outcomes)
-        total_runs += run
-        if random.random() < 0.05:
-            wickets += 1
-            if wickets >= 10:
-                break
-    return total_runs
-
-simulated_scores = [simulate_innings() for _ in range(num_simulations)]
-
-plt.figure(figsize=(10, 5))
-plt.hist(simulated_scores, bins=30, color='dodgerblue', edgecolor='black')
-plt.title(f"Monte Carlo Simulation of T20 Innings (n={num_simulations})")
-plt.xlabel("Total Runs Scored")
-plt.ylabel("Frequency")
-plt.grid(True)
-plt.show()
-
-print("🏏 Monte Carlo Simulation Summary:")
-print(f"  • Average score: {np.mean(simulated_scores):.2f}")
-print(f"  • Median score : {np.median(simulated_scores)}")
-print(f"  • Max score    : {np.max(simulated_scores)}")
-print(f"  • Min score    : {np.min(simulated_scores)}")
-
 import pandas as pd
 import matplotlib.pyplot as plt
 
