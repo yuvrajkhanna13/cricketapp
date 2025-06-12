@@ -1,7 +1,7 @@
 # Cricket Prediction Model
 
 import pandas as pd
-
+import matplotlib as plt
 # Load player info
 players_df = pd.read_csv('players_info.csv')  # Should contain: player_id, player_name
 
@@ -51,9 +51,6 @@ for file in files_info:
     outname = f'merged_{fname}'
     df.to_csv(outname, index=False)
     print(f"✅ Saved: {outname}\n")
-
-import pandas as pd
-import matplotlib.pyplot as plt
 
 df = pd.read_csv("merged_t20_matches_cleaned.csv")
 df['team1_name'] = df['team1_name'].str.lower().str.strip()
