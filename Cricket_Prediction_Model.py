@@ -40,7 +40,7 @@
         "id": "cwsNk0_3Wr6E",
         "outputId": "eb86e743-19bd-4af7-cec8-548a7148d37e"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "display_data",
