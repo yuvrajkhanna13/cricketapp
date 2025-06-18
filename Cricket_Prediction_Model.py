@@ -830,7 +830,7 @@
         },
         "outputId": "60d8856d-a64f-45a6-d07a-dca5134f0553"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -869,7 +869,7 @@
         },
         "outputId": "babc672f-b50d-413a-ac86-75c8b344d6d4"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -910,7 +910,7 @@
         },
         "outputId": "ef2b4cbc-661b-4594-bce3-451a75b46019"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "stream",
@@ -958,7 +958,7 @@
         },
         "outputId": "c107ea0c-0322-42e8-9fc2-c9149529401b"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "stream",
@@ -1005,7 +1005,7 @@
         },
         "outputId": "e09118ab-8ca7-40c5-f2aa-5fd863d3e67e"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1044,7 +1044,7 @@
         },
         "outputId": "fbabb0dc-6abb-4909-b5eb-b08432cecdde"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1141,7 +1141,7 @@
         },
         "outputId": "f228d312-19ad-4ac3-b0bf-a21081e61417"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "stream",
@@ -1378,7 +1378,7 @@
         "id": "2laYxsUJdthN",
         "outputId": "cd55f3ee-b3bf-4401-ae1e-96ee1f80d9fe"
       },
-      "execution_count": null,
+      "execution_count": None,
       "outputs": [
         {
           "output_type": "stream",
