@@ -11,16 +11,16 @@ players_df = pd.read_csv('players_info.csv')  # Must contain: player_id, player_
 
 # Files and merging instructions
 files_info = [
-    {'filename': 't20_batting_cleaned.csv', 'keys': ['batsman']},
-    {'filename': 't20_bowling_cleaned.csv', 'keys': ['bowler_id']},
-    {'filename': 't20_partnership_cleaned.csv', 'keys': ['player1', 'player2']},
-    {'filename': 't20_fow_cleaned.csv', 'keys': ['batsman_id']},
+    {'filename': 'merged_t20_batting_cleaned.csv', 'keys': ['batsman']},
+    {'filename': 'merged_t20_bowling_cleaned.csv', 'keys': ['bowler_id']},
+    {'filename': 'merged_t20_partnership_cleaned.csv', 'keys': ['player1', 'player2']},
+    {'filename': 'merged_t20_fow_cleaned.csv', 'keys': ['batsman_id']},
     {'filename': 't20_matches_cleaned.csv', 'keys': []},
 
-    {'filename': 'odi_batting_cleaned.csv', 'keys': ['batsman']},
-    {'filename': 'odi_bowling_cleaned.csv', 'keys': ['bowler_id']},
-    {'filename': 'odi_partnership_cleaned.csv', 'keys': ['player1', 'player2']},
-    {'filename': 'odi_fow_cleaned.csv', 'keys': ['batsman_id']},
+    {'filename': 'merged_odi_batting_cleaned.csv', 'keys': ['batsman']},
+    {'filename': 'merged_odi_bowling_cleaned.csv', 'keys': ['bowler_id']},
+    {'filename': 'merged_odi_partnership_cleaned.csv', 'keys': ['player1', 'player2']},
+    {'filename': 'merged_odi_fow_cleaned.csv', 'keys': ['batsman_id']},
     {'filename': 'odi_matches_cleaned.csv', 'keys': []}
 ]
 
@@ -57,8 +57,6 @@ for file in files_info:
     df.to_csv(outname, index=False)
     print(f"📁 Saved: {outname}")
 
-from google.colab import files
-uploaded = files.upload()
 
 import pandas as pd
 import matplotlib.pyplot as plt
